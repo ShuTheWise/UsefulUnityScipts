@@ -17,13 +17,7 @@ public class DeleteComponent : EditorWindow
         EditorGUILayout.LabelField("Delete Component");
         if (GUILayout.Button("Detele it"))
         {
-            Animator[] gameobjs = FindObjectsOfType<Animator>();
-            foreach(Animator a in gameobjs)
-            {
-                DestroyImmediate(a);
-               
-                //a.enabled = false;
-            }
+            
         }
     }
 }
